@@ -1,0 +1,111 @@
+.banner_holder {
+    width: 100%;
+    height: auto;
+}
+
+.banner {
+    width: 100%;
+}
+
+.title_holder {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 80%;
+    margin: auto;
+}
+
+.title_subline {}
+
+.small_title {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.small_title_text {
+    color: #FFF;
+    text-align: center;
+    font-family: Trade Gothic LT Std;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    line-height: 100%;
+}
+
+.grid_column_container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.text_small {
+    color: #FFF;
+    font-family: Trade Gothic LT Std;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    /* 141.667% */
+}
+
+.cans {
+    width: 100%;
+}
+
+.list_title {
+    text-align: left;
+}
+
+.list_title_text {
+    color: #FFF;
+    font-family: Trade Gothic LT Std;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.list_items {
+    color: #FFF;
+    font-family: Trade Gothic LT Std;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    background-size: 20px;
+    list-style: none;
+    /* list-style-image: url('http://upload.wikimedia.org/wikipedia/commons/1/19/Icons-mini-icon_attachment.gif'); */
+    /* 116.667% */
+}
+
+.list_items {
+    display: grid;
+    grid-template-columns: 10% 80%;
+    align-items: center;
+    column-gap: 20px;
+    padding-bottom: 10px;
+}
+
+.bullet_point {
+    width: 50px;
+}
+
+.small_title_text_v2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Trade Gothic LT Std;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    line-height: 100%;
+    width: 100%;
+    margin: auto;
+}

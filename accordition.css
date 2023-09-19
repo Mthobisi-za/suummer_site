@@ -1,0 +1,74 @@
+.tab_container {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.accordion {
+    width: 100%;
+    margin: auto;
+    background: transparent;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 20px;
+}
+
+.card {
+    border-radius: 7px;
+    background: rgba(217, 217, 217, 0.26);
+}
+
+.btn-link {
+    color: #FFF;
+    font-family: Trade Gothic LT Std;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.btn-link:hover,
+.card-header:hover,
+.mb-0:hover {
+    color: #FFF!important;
+}
+
+.card-body {
+    color: #FFF;
+    font-family: Trade Gothic LT Std;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* text-decoration-line: underline; */
+}
+
+.card_link {
+    color: #FFF;
+    font-family: Trade Gothic LT Std;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    text-decoration-line: underline;
+    word-wrap: break-word;
+    /* white-space: ; */
+}
+
+.small_title_text_v3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Trade Gothic LT Std;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.small_title_v3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 80%;
+    margin: auto;
+}
