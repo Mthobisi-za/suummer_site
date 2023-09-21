@@ -51,6 +51,15 @@
     .title_container {
         text-align: left;
     }
+    .list_title_text {
+        text-align: center;
+    }
+    .list_items {
+        line-height: 100%;
+    }
+    .column_content_container .text_small {
+        padding-top: 15px;
+    }
 }
 
 @media (max-width:500px) {
