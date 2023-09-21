@@ -72,3 +72,20 @@
     width: 80%;
     margin: auto;
 }
+
+.grid_new_container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.text_left {
+    text-align: left;
+}
+
+.icons,
+.first_icon,
+.second_icon {
+    text-align: right;
+}

@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -16,6 +18,7 @@
     <link rel="stylesheet" href="./accordition.css">
     <!-- responsive -->
     <link rel="stylesheet" href="./responsive_tablet.css">
+    <link rel="stylesheet" href="./animate_controller.css">
 </head>
 
 <body class="body">
@@ -23,10 +26,10 @@
         <img src="./assets/banner.png" alt="" class="banner">
     </div>
     <div class="title_holder">
-        <img src="./assets/Subline 1.png" alt="" class="title_subline">
+        <img src="./assets/Subline 1.png" alt="" class="title_subline animate__animated animate__bounceInUp">
     </div>
     <div class="small_title">
-        <p class="small_title_text first_anime_text">Summer ya di Summer is here!</p>
+        <p class="small_title_text first_anime_text animate__animated animate__bounceInUp">Summer ya di Summer is here!</p>
     </div>
     <div class="grid_column_container">
         <div class="column_content_container">
@@ -95,11 +98,17 @@
     <div class="tab_container">
         <div class="accordion" id="accordionExample">
             <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <div class="card-header" id="headingOne" onclick="rotateChev('one')">
+                    <h5 class="mb-0 grid_new_container" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="btn btn-link text_left">
                             I missed the competition, where can I get tickets?
                   </button>
+                        <div class="icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up chev_first" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M6 15l6 -6l6 6" />
+                            </svg>
+                        </div>
                     </h5>
                 </div>
 
@@ -111,11 +120,17 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="card-header" id="headingTwo" onclick="rotateChev('two')">
+                    <h5 class="mb-0 grid_new_container" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="btn btn-link text_left">
                             Where are the concert venues?
                   </button>
+                        <div class="icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down chev_second" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M6 9l6 6l6 -6" />
+                              </svg>
+                        </div>
                     </h5>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -127,11 +142,17 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <div class="card-header" id="headingThree" onclick="rotateChev('three')">
+                    <h5 class="mb-0 grid_new_container" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="btn btn-link text_left">
                             How can I download the Refreshed tracks?
                   </button>
+                        <div class="icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down chev_third" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M6 9l6 6l6 -6" />
+                              </svg>
+                        </div>
                     </h5>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
@@ -147,11 +168,7 @@
     <div class="small_title_v3">
         <p class="small_title_text_v3">This campaign will run from the 29/30th September – 31 December</p>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
-    <script src="./animations.animate.js"></script>
+    <script src="./rotate.js"></script>
 </body>
 
 </html>
