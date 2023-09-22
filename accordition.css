@@ -20,7 +20,7 @@
 
 .btn-link {
     color: #FFF;
-    font-family: Trade Gothic LT Std;
+    font-family: 'Trade Gothic LT Std';
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -36,7 +36,7 @@
 
 .card-body {
     color: #FFF;
-    font-family: Trade Gothic LT Std;
+    font-family: 'Trade Gothic LT Std';
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -59,7 +59,7 @@
 .small_title_text_v3 {
     color: #FFF;
     text-align: center;
-    font-family: Trade Gothic LT Std;
+    font-family: 'Trade Gothic LT Std';
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -88,4 +88,9 @@
 .first_icon,
 .second_icon {
     text-align: right;
+}
+
+.chev_second,
+.chev_third {
+    transform: rotate(360deg);
 }

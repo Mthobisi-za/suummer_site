@@ -8,3 +8,9 @@ body {
 img {
     max-width: 100%;
 }
+
+@font-face {
+    font-family: 'Trade Gothic LT Std';
+    src: url('./fonts/Trade\ Gothic\ LT\ Std\ Bold\ Condensed\ No.\ 20.otf');
+    src: url('./fonts/Trade\ Gothic\ LT\ Std\ Bold\ Condensed\ No.\ 20.otf') format('otf'), url('./fonts/TradeGothicLTStd.otf') format('otf');
+}
